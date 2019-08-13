@@ -1,4 +1,4 @@
-Gated2Depth
+DepthBenchmark
 ============================
 This repo contains the code and data for [Pixel-Accurate Depth Evaluation in Realistic Driving Scenarios](https://arxiv.org/pdf/1906.08953.pdf) by [Tobias Gruber](https://scholar.google.de/citations?user=w-VeQ5cAAAAJ&hl=de), [Mario Bijelic](http://mariobijelic.de/wordpress/), [Felix Heide](http://www.cs.princeton.edu/~fheide/), [Werner Ritter](https://www.xing.com/profile/Werner_Ritter7) and [Klaus Dietmayer](https://www.uni-ulm.de/en/in/institute-of-measurement-control-and-microtechnology/institute/staff/institutional-administration/prof-dr-ing-klaus-dietmayer/).
 
