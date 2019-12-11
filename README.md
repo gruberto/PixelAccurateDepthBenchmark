@@ -26,7 +26,19 @@ Activate conda environment.
 conda activate PixelAccurateDepthBenchmark
 ```
 
-Download the benchmark data from <url> (will be available soon)
+Download and unzip the benchmark data from <url> (will be available soon) into a folder "data".
+
+After unzipping the files, your directory should look like this:
+```
+.
+|-- data
+    |-- intermetric_rgb_left
+    |-- lidar_hdl64_rgb_left
+    |-- rgb_left_8bit
+    |-- rgb_right_8bit
+|-- doc
+|-- src
+```
 
 Apply your algorithm on the benchmark dataset and save your depth as npz-File in a folder <your_approach>.
 ```
