@@ -5,7 +5,7 @@ import os
 import numpy as np
 import multiprocessing
 from metrics import Metric
-import tqdm
+#import tqdm
 import sys
 
 def print_result_visibility(result_visibility, delimiter='\t'):
@@ -161,8 +161,8 @@ if __name__ == '__main__':
 
     import argparse
     parser = argparse.ArgumentParser(description="Evaluate depth estimation results")
-    parser.add_argument('--data_root', type=str, default='../data', help='Path to data')
-    parser.add_argument('--results_dir', type=str, default='../results', help='Folder for evaluation results')
+    parser.add_argument('--data_root', type=str, default='data', help='Path to data')
+    parser.add_argument('--results_dir', type=str, default='results', help='Folder for evaluation results')
     parser.add_argument('--daytime', type=str, default='day', help='day or night')
     parser.add_argument('--approach', type=str, default='depth', help='Selected folder for evaluation')
 

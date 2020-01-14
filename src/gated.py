@@ -6,8 +6,10 @@ def load_gated(data_root, sample, gated_types=['gated0_10bit', 'gated17_10bit', 
     gated_array = np.zeros((width * height, len(gated_types)), dtype=float)
     for i, gated_type in enumerate(gated_types):
         picture_file_gated = os.path.join(data_root, gated_type, sample + '.png')
-        picture = Image.open(picture_file_gated)
-        gated_array[:, i] = np.clip(np.array(picture).flatten().astype(np.float32) - dark_level[i], 0.0, 1023.0)
+        picture = cv2.imread(picture_file_gated, -1)
+        #picture = Image.open(picture_file_gated)
+        #gated_array[:, i] = np.clip(np.array(picture).flatten().astype(np.float32) - dark_level[i], 0.0, 1023.0)
+        gated_array[:, i] = np.clip(picture.flatten().astype(np.float32) - dark_level[i], 0.0, 1023.0)
 
     return gated_array
 
