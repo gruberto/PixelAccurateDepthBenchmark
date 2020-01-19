@@ -1,6 +1,6 @@
 #!/bin/bash
 
-download_root="/external/ext0/pixel_accurate_depth_benchmark"
+download_root=$1
 dst="data"
 
 mkdir $dst
